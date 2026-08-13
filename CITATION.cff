@@ -1,0 +1,17 @@
+cff-version: 1.0.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Piñas"
+  given-names: "Joshua"
+  orcid: "https://orcid.org/0000-0001-7888-8167"
+title: "Analyzing BibTeX metadata: temporal trends, categorization, and keyword clouds"
+version: 2.0
+doi: 10.5281/zenodo.21922007
+date-released: 2026-08-13
+url: "https://github.com/mcjoshuapinas/Analyzing-BibTeX-Metadata-Temporal-Trends-Categorization-and-Keyword-Clouds"
+keywords:
+  - temporal trends
+  - categorization
+  - keyword clouds
+  - BibTeX metadata
+license: MIT
