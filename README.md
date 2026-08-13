@@ -1,2 +1,11 @@
 # Analyzing-BibTeX-Metadata-Temporal-Trends-Categorization-and-Keyword-Clouds
 These Python scripts analyze BibTeX metadata for the purpose of reviewing articles.
+There are four Python scripts, its usage can be understood by four consecutive steps.
+- The first script named 'script_0_counting_records_per_document_type_and_publication_year.py' allows to read five BibTex files, previously categorized by peer-reviewed articles, conferences articles, doctoral dissertations, books, chapters and technical reports. It comtabilizes each kind of records by publication year, and it generates an independant CSV file.
+- The second script named 'script_1_Temporal_analysis_all_records.py' enables to plot in a three subplot figure the temporal distribution of 157 reviewed records by publication year and document type. (a) Bar chart showing annual counts. (b) Stacked area chart illustrating cumulative trends. (c) Pie chart showing proportional distribution by document type. It requires the five CSV files generated in the previous step.
+- The third script named 'Figure_3_categorisation_articles.py' allows to plot in three subplot figure the categorization of the 83 peer-reviewed articles. The data included in this script can be verified using the modified BibTex file 'Considered_citations_step_2_3_n_83_classement.bib' which includes three aditional labels (scale, method, and topic).
+- The fourth script named 'script_3_keyword_cloud.py' creates a customized keyword cloud figure. It requires 'key_words_latest_contribution.bib' which contains peer-reviewed articles and conferences articles.
+All generated figures are .TIFF with a customized DPI. Other kinds of file can be as well generated.
+
+Citation 
+If you use this software in your research or industrial laboratory, please cite it as follows: DOI Code snippet @software{pinas_2026, author = {Piñas, Joshua}, title = {Analyzing BibTeX metadata: temporal trends, categorizationc and keyword cloud}, year = 2026, publisher = {GitHub}, doi = {}, url = {https://github.com/mcjoshuapinas/Analyzing-BibTeX-Metadata-Temporal-Trends-Categorization-and-Keyword-Clouds} }
