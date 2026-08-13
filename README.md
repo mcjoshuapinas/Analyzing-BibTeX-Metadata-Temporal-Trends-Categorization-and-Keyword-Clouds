@@ -9,3 +9,5 @@ All generated figures are .TIFF with a customized DPI. Other kinds of file can b
 
 Citation 
 If you use this software in your research or industrial laboratory, please cite it as follows: DOI Code snippet @software{pinas_bib_2026, author = {Piñas, Joshua}, title = {Analyzing BibTeX metadata: temporal trends, categorization and keyword clouds}, year = {2026}, publisher = {Zenodo}, doi = {10.5281/zenodo.21922007}, url = {https://github.com/mcjoshuapinas/Analyzing-BibTeX-Metadata-Temporal-Trends-Categorization-and-Keyword-Clouds} }
+or 
+Piñas, Joshua. (2026). Analyzing BibTeX metadata: temporal trends, categorization and keyword clouds (Version v2.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.21922007
