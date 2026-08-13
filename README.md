@@ -8,4 +8,4 @@ There are four Python scripts, its usage can be understood by four consecutive s
 All generated figures are .TIFF with a customized DPI. Other kinds of file can be as well generated.
 
 Citation 
-If you use this software in your research or industrial laboratory, please cite it as follows: DOI Code snippet @software{pinas_2026, author = {Piñas, Joshua}, title = {Analyzing BibTeX metadata: temporal trends, categorizationc and keyword cloud}, year = 2026, publisher = {GitHub}, doi = {}, url = {https://github.com/mcjoshuapinas/Analyzing-BibTeX-Metadata-Temporal-Trends-Categorization-and-Keyword-Clouds} }
+If you use this software in your research or industrial laboratory, please cite it as follows: DOI Code snippet @software{pinas_bib_2026, author = {Piñas, Joshua}, title = {Analyzing BibTeX metadata: temporal trends, categorization and keyword clouds}, year = {2026}, publisher = {Zenodo}, doi = {10.5281/zenodo.21922007}, url = {https://github.com/mcjoshuapinas/Analyzing-BibTeX-Metadata-Temporal-Trends-Categorization-and-Keyword-Clouds} }
