@@ -18,7 +18,6 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Define relative paths for data input and results output
 # This ensures the code works on any computer without modification
-data_folder = os.path.join(BASE_DIR, "data")
 output_directory = os.path.join(BASE_DIR, "output")
 
 # Create the output directory automatically if it doesn't exist
@@ -27,12 +26,12 @@ if not os.path.exists(output_directory):
 
 # --- DATA LOADING: SURVEY RESPONSES ---
 # Path to the thermal comfort survey CSV file
-my_lib_articles = os.path.join(data_folder, "count_articles.csv")
-my_lib_conference = os.path.join(data_folder, "count_conference.csv")
-my_lib_report = os.path.join(data_folder, "count_report.csv")
-my_lib_thesis = os.path.join(data_folder, "count_thesis.csv")
-my_lib_book = os.path.join(data_folder, "count_book.csv")
-my_lib_chapter = os.path.join(data_folder, "count_chapter.csv")
+my_lib_articles = os.path.join(output_directory, "count_articles.csv")
+my_lib_conference = os.path.join(output_directory, "count_inproceedings.csv")
+my_lib_report = os.path.join(output_directory, "count_report.csv")
+my_lib_thesis = os.path.join(output_directory, "count_phdthesis.csv")
+my_lib_book = os.path.join(output_directory, "count_book.csv")
+my_lib_chapter = os.path.join(output_directory, "count_chapter.csv")
 
 #dataframe reading
 df_articles = pd.read_csv(my_lib_articles, sep='\t', header=None)
@@ -72,7 +71,7 @@ data = [df_articles['nb_articles'], df_conference['nb_conference'],
         df_thesis['nb_thesis'], df_report['nb_report'], df_nb]
 colors = ['#1F77B4', '#FF7F0E', '#2CA02C', '#9467BD', '#D62728']
 labels = ['PRA', 'CA', 'DD', 'TR', 'T']
-sizes = [83, 34, 20, 17, 3]
+sizes = [89, 34, 20, 17, 4]
 # 3. Offset Path
 for i in range(n_categories):
     # Le calcul x - (n_categories/2)*width + i*width permet de centrer le groupe
@@ -113,5 +112,5 @@ ax3.pie(sizes, labels=['PRA', 'CA', 'DD', 'TR', 'B'], colors=['#1F77B4', '#FF7F0
 ax3.text(0.98, 0.98, '(c)', transform=ax3.transAxes, fontsize=10,
         fontweight='bold', va='top', ha='right')
 # 5. Saving figure as .tiff file
-plt.savefig(os.path.join(output_directory, "Figure_2_10_08_26.tiff"), format='tiff', bbox_inches='tight', dpi=800, pil_kwargs={'compression': 'tiff_lzw'})
+plt.savefig(os.path.join(output_directory, "Figure_2_18_08_26.tiff"), format='tiff', bbox_inches='tight', dpi=800, pil_kwargs={'compression': 'tiff_lzw'})
 plt.show()
