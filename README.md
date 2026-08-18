@@ -6,7 +6,7 @@ There are four Python scripts, its usage can be understood by four consecutive s
 - The third script named 'script_2_2_overall_classification.py' allows to plot in three subplot figure the categorization of the 83 peer-reviewed articles. The data included in this script can be verified using the script named 'script_2_1_individual_classification.py' which needs the modified BibTex file 'Considered_citations_step_2_3_n_89_classement.bib'. The latter includes three aditional labels (scale, method, and topic).
 - The fourth script named 'script_3_keyword_cloud.py' creates a customized keyword cloud figure. It requires 'key_words_latest_contribution.bib' which contains peer-reviewed articles and conferences articles.
 All generated figures are .TIFF with a customized DPI. Other kinds of file can be as well generated.
-
+Folder 'data' contains the BibTeX files and folder 'output' contains CSV files and the figures.
 Citation 
 If you use this software in your research or industrial laboratory, please cite it as follows: DOI Code snippet @software{pinas_bib_2026, author = {Piñas, Joshua}, title = {Analyzing BibTeX metadata: temporal trends, categorization and keyword clouds}, year = {2026}, publisher = {Zenodo}, doi = {10.5281/zenodo.21922007}, url = {https://github.com/mcjoshuapinas/Analyzing-BibTeX-Metadata-Temporal-Trends-Categorization-and-Keyword-Clouds} }
 or 
